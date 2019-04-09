@@ -12,7 +12,7 @@ import '@expo/vector-icons';
 class List extends React.Component{
 
   static navigationOptions = ({navigation}) => ({
-    header: null,
+    title: 'List'
     
   })
 
@@ -32,7 +32,7 @@ class List extends React.Component{
 
         
              <View style={styles.header}>
-        <Header
+        {/* <Header
         
           leftComponent={{
             icon: 'menu',
@@ -47,7 +47,7 @@ class List extends React.Component{
           centerComponent={{  style: { color: '#fff' } }}
           backgroundColor="#028A7E"
         /> 
-
+ */}
           <View style={styles.container}>  
             
               <Text>List</Text>

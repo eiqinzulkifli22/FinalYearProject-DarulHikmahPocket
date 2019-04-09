@@ -9,16 +9,17 @@ import '@expo/vector-icons';
 //import OpeningHours from './OpeningHours';
 
 class IIUMLibScreen extends React.Component{
-/* 
+
   static navigationOptions = ({navigation}) => ({
-    header: null
-  }) */
+    //title: 'IIUM Library'
+    header:null
+  }) 
     render(){
         return(
 
           // header style
          <View style={styles.header}>
-          <Header
+           <Header
             leftComponent={{
               icon: 'menu',
               color: '#fff',
@@ -30,10 +31,10 @@ class IIUMLibScreen extends React.Component{
               color: '#fff',
               onPress: () => this.props.navigation.navigate('My Account')}}
               
-            centerComponent={{  style: { color: '#fff' } }}
+            centerComponent={{ header:{title:'IIUM Library'}, style: { color: '#fff' } }}
 
             backgroundColor="#028A7E"
-          />
+          /> 
 
 
           <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -93,6 +94,7 @@ export default IIUMLibScreen;
 }) */
 
 //export default createAppContainer(AppStackNavigator);
+
 
 const styles = StyleSheet.create({
     container:{

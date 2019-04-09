@@ -137,7 +137,7 @@ class Facilities extends Component{
   }
 
   static navigationOptions = ({navigation}) => ({
-    header: null
+    title: 'Facilities'
   })
   
     render(){
@@ -145,7 +145,7 @@ class Facilities extends Component{
 
 
             <View style={styles.header}>
-       <Header
+     {/*   <Header
           leftComponent={{
             icon: 'menu',
             color: '#fff',
@@ -158,11 +158,11 @@ class Facilities extends Component{
             onPress: () => this.props.navigation.navigate('My Account')}}
           centerComponent={{  style: { color: '#fff' } }}
           backgroundColor="#028A7E"
-        />
+        /> */}
 
 <View style={styles.MainContainer}>
 
-<Text style={styles.PageTitle}>FACILITIES</Text>
+{/* <Text style={styles.PageTitle}>FACILITIES</Text> */}
 
   <ScrollView contentContainerStyle={{ paddingHorizontal: 10, paddingVertical: 5 }}>
     {

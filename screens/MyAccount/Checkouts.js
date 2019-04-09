@@ -12,9 +12,10 @@ import '@expo/vector-icons';
 class Checkouts extends React.Component{
 
   static navigationOptions = ({navigation}) => ({
-    header: null,
+    title: 'Checkouts'
     
   })
+  
 
    /*  static navigationOptions = {
         headerTitle: <HomeScreen/>,
@@ -30,34 +31,10 @@ class Checkouts extends React.Component{
     render(){
         return(
 
-           /*  <View>
-              <DrawerHeader/>
-            </View> */
-          /*   <Container>
-
-                <Header>
-                    <Left>
-                        <Icon name= 'android-menu'onPress={()=>this.props.navigation.navigate('DrawerOpen')}/>
-
-                    </Left>
-                </Header>
-                <Content contentContainerStyle={{
-                  flex: 1,
-                  alignItems: 'center,',
-                  justifyContent: 'center'
-                
-                }}>
-
-                </Content>
-            </Container>
-            
-        );
-    }
-
-  } */
+          
 
              <View style={styles.header}>
-        <Header
+     {/*    <Header
         
           leftComponent={{
             icon: 'menu',
@@ -71,7 +48,7 @@ class Checkouts extends React.Component{
             onPress: () => this.props.navigation.navigate('My Account')}}
           centerComponent={{  style: { color: '#fff' } }}
           backgroundColor="#028A7E"
-        /> 
+        />  */}
 
           <View style={styles.container}>  
             

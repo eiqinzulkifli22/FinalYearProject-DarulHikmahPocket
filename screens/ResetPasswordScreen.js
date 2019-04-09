@@ -1,22 +1,17 @@
 import React from 'react';
-import {View, Text,StyleSheet} from 'react-native';
-import { Header} from 'react-native-elements';
+import {View, Text,StyleSheet, Button} from 'react-native';
+import { Container, Content } from 'native-base'
+import { Header, SearchBar } from 'react-native-elements';
 import '@expo/vector-icons';
-
-
-class Profile extends React.Component{
-
+class ResetPasswordScreen extends React.Component{
   static navigationOptions = ({navigation}) => ({
-    title: 'Profile'
-    
+    header: null
   })
+  
     render(){
-      
         return(
-
-
             <View style={styles.header}>
-      {/*  <Header
+        {/* <Header
           leftComponent={{
             icon: 'menu',
             color: '#fff',
@@ -29,21 +24,21 @@ class Profile extends React.Component{
             onPress: () => this.props.navigation.navigate('My Account')}}
           centerComponent={{  style: { color: '#fff' } }}
           backgroundColor="#028A7E"
-        />
- */}
-            <View style={styles.container}>  
-            
-                    <Text>Profile Screen</Text>
+        /> */}
 
+            <View style={styles.container}>
+                <Text>Reset Password Screen</Text>
+
+                <Button title='Reset '
+                      onPress={
+                        ()=>this.props.navigation.navigate('LoginScreen')}
+                      />
             </View>
-
-        </View> 
-      
-     
+        </View>
         )
     }
 }
-export default Profile;
+export default ResetPasswordScreen;
 
 const styles = StyleSheet.create({
     container:{

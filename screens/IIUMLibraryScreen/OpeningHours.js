@@ -6,16 +6,16 @@ import '@expo/vector-icons';
 
 class OpeningHours extends React.Component{
 
-  static navigationOptions = ({navigation}) => ({
-    header: null
-  })
+   static navigationOptions = ({navigation}) => ({
+    title:'Opening Hours'
+  }) 
   
     render(){
       
         return(
 
 
-            <View style={styles.header}>
+            /* <View style={styles.header}>
        <Header
           leftComponent={{
             icon: 'menu',
@@ -29,7 +29,7 @@ class OpeningHours extends React.Component{
             onPress: () => this.props.navigation.navigate('My Account')}}
           centerComponent={{  style: { color: '#fff' } }}
           backgroundColor="#028A7E"
-        />
+        /> */
 
             <View style={styles.container}>  
             
@@ -37,7 +37,7 @@ class OpeningHours extends React.Component{
 
             </View>
 
-        </View> 
+    
       
      
         )

@@ -6,7 +6,7 @@ import '@expo/vector-icons';
 
 class Events extends React.Component{
   static navigationOptions = ({navigation}) => ({
-    header: null
+    title: 'Events'
   })
   
     render(){
@@ -14,7 +14,7 @@ class Events extends React.Component{
 
 
             <View style={styles.header}>
-       <Header
+       {/* <Header
           leftComponent={{
             icon: 'menu',
             color: '#fff',
@@ -27,7 +27,7 @@ class Events extends React.Component{
             onPress: () => this.props.navigation.navigate('My Account')}}
           centerComponent={{  style: { color: '#fff' } }}
           backgroundColor="#028A7E"
-        />
+        /> */}
 
             <View style={styles.container}>  
             

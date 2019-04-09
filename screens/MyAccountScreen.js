@@ -9,10 +9,10 @@ import '@expo/vector-icons';
 //import OpeningHours from './OpeningHours';
 
 class MyAccountScreen extends React.Component{
-/* 
+
   static navigationOptions = ({navigation}) => ({
     header: null
-  }) */
+  }) 
     render(){
         return(
 
@@ -67,7 +67,7 @@ class MyAccountScreen extends React.Component{
 
               <Button
                 title="Logout"
-                onPress={() => this.props.navigation.navigate('Logout')}
+                onPress={() => this.props.navigation.navigate('LoginScreen')}
               />
 
           

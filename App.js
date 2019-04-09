@@ -28,6 +28,24 @@ import Checkouts from './screens/MyAccount/Checkouts';
 import Fines from './screens/MyAccount/Fines';
 import Logout from './screens/MyAccount/Logout';
 
+import OpacScreen2 from './screens/OpacScreen2';
+import OpacScreen3 from './screens/OpacScreen3';
+import BarcodeScanner from './screens/BarcodeScanner';
+import BarcodeScanner2 from './screens/BarcodeScanner2';
+//import firebase from'firebase';
+
+import LoginScreen from './screens/LoginScreen';
+import ResetPasswordScreen from './screens/ResetPasswordScreen'
+
+// var config = {
+//   apiKey: "AIzaSyA62phh4l2jYHUaKD9DERTU8WLFO3zWziI",
+//   authDomain: "react-native-bb86a.firebaseapp.com",
+//   databaseURL: "https://react-native-bb86a.firebaseio.com",
+//   projectId: "react-native-bb86a",
+//   storageBucket: "react-native-bb86a.appspot.com",
+//   messagingSenderId: "606697324561"
+// };
+// firebase.initializeApp(config);
 
 
 
@@ -55,29 +73,42 @@ export default class App extends React.Component{
 }) */
 
 const AppStackNavigator = createStackNavigator({
-  HomeScreen:HomeScreen,
-  IIUMLibScreen: IIUMLibScreen,
  
-  OpacScreen: OpacScreen,
-  Facilities: Facilities, 
-  FacilityReservationScreen: FacilityReservationScreen,
+  LoginScreen: {screen: LoginScreen},
+  HomeScreen:  {screen: HomeScreen},
+  LoginScreen: {screen: LoginScreen},
+  IIUMLibScreen: {screen: IIUMLibScreen},
+ 
+  OpacScreen: {screen: OpacScreen},
+  Facilities: {screen: Facilities}, 
+  FacilityReservationScreen: {screen: FacilityReservationScreen},
 
-  OpeningHours: OpeningHours,
-  Contacts:Contacts,
-  News: News,
-  Events: Events,
-  Services: Services,
-  Collections: Collections,
+  OpeningHours: {screen: OpeningHours},
+  Contacts: {screen: Contacts},
+  News: {screen: News},
+  Events: {screen: Events},
+  Services: {screen: Services},
+  Collections: {screen: Collections},
 
-  MyAccountScreen: MyAccountScreen,
-  Profile: Profile,
-  List: List,
-  Hold: Hold,
-  Checkouts:Checkouts,
-  Fines: Fines,
-  Logout: Logout,
+  MyAccountScreen: {screen: MyAccountScreen},
+  Profile: {screen: Profile},
+  List: {screen: List},
+  Hold: {screen: Hold},
+  Checkouts: {screen: Checkouts},
+  Fines: {screen: Fines},
+  Logout: {screen: Logout},
   
-})  
+  OpacScreen2: {screen: OpacScreen2},
+  OpacScreen3: {screen: OpacScreen3},
+  BarcodeScanner: {screen: BarcodeScanner},
+  BarcodeScanner2: {screen: BarcodeScanner2},
+
+  ResetPasswordScreen: {screen: ResetPasswordScreen},
+
+//  initialRouteName: 'LoginScreen'
+},
+  
+)  
  
 
 /* export default createDrawerNavigator({
@@ -90,15 +121,12 @@ const AppStackNavigator = createStackNavigator({
 }) */
 
  const AppDrawerNavigator = createDrawerNavigator({
-  Home: AppStackNavigator,
-  'IIUM Library': IIUMLibScreen,
-  OpeningHours: OpeningHours,
-  Contacts: Contacts,
-  'My Account': MyAccountScreen,
-  'Online Public Access Catalog': OpacScreen,
-  'Facility Reservation': FacilityReservationScreen,
-  Notification: NotificationScreen,
-  Setting: SettingScreen,
+  LoginScreen: {screen: AppStackNavigator, navigationOptions: {drawerLabel: () => null}},
+  Home: {screen: HomeScreen}, 
+  'IIUM Library Screen': {screen: IIUMLibScreen},
+  'My Account': {screen: MyAccountScreen},
+  'Online Public Access Catalog': {screen: OpacScreen},
+  FacilityReservationScreen: {screen: FacilityReservationScreen},
   
 })
 

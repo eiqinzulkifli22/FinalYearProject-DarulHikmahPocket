@@ -78,7 +78,7 @@ class Accordion_Panel extends Component {
 class Collections extends Component{
   
   static navigationOptions = ({navigation}) => ({
-    header: null
+    title: 'Collections'
   })
 
   
@@ -156,7 +156,7 @@ class Collections extends Component{
 
 
             <View style={styles.header}>
-       <Header
+     {/*   <Header
           leftComponent={{
             icon: 'menu',
             color: '#fff',
@@ -169,10 +169,10 @@ class Collections extends Component{
             onPress: () => this.props.navigation.navigate('My Account')}}
           centerComponent={{  style: { color: '#fff' } }}
           backgroundColor="#028A7E"
-        />
+        /> */}
 
             <View style={styles.MainContainer}>
-            <Text style={styles.PageTitle}>Collections</Text>
+        {/*     <Text style={styles.PageTitle}>Collections</Text> */}
             <ScrollView contentContainerStyle={{ paddingHorizontal: 10, paddingVertical: 5 }}>
           {
             this.state.AccordionData.map((item, key) =>
